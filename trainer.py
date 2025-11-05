@@ -4,6 +4,10 @@ import pickle
 import argparse
 from sentence_transformers import SentenceTransformer, util
 
+# === Dossier pour stocker les modèles ===
+MODELS_DIR = "models"
+os.makedirs(MODELS_DIR, exist_ok=True)
+
 # === Fonctions ===
 
 def train_classifier(model: SentenceTransformer, data: dict, save_path: str):
@@ -28,7 +32,7 @@ def load_or_train_classifier(config_path: str):
     model_name = config.get("model_name", "intent_classifier")
     labels_data = config.get("labels", {})
 
-    classifier_file = f"{model_name}.pkl"
+    classifier_file = os.path.join(MODELS_DIR, f"{model_name}.pkl")
     model = SentenceTransformer('all-MiniLM-L6-v2')
 
     if os.path.exists(classifier_file):
