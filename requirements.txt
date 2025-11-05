@@ -1,0 +1,4 @@
+requests
+python-dotenv
+fastapi
+sentence_transformers

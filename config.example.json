@@ -1,0 +1,25 @@
+{
+  "model_name": "intent_classifier",
+  "labels": {
+    "travel": [
+      "j’aimerais planifier un voyage",
+      "je veux aller en vacances",
+      "je souhaite visiter un autre pays",
+      "je voudrais organiser un séjour",
+      "j'ai besoin de décompresser",
+      "je voudrais prendre des congés",
+      "je veux m'évader quelques jours",
+      "je veux partir en week-end",
+      "je cherche une destination pour mes vacances"
+    ],
+    "faq": [
+      "je veux chercher dans la FAQ",
+      "où puis-je trouver la réponse à ma question",
+      "j’ai une question sur le service",
+      "je cherche une information dans la base de connaissance",
+      "je veux consulter la FAQ",
+      "je cherche un article d'aide",
+      "comment fonctionne ce service"
+    ]
+  }
+}
